@@ -18,38 +18,25 @@ A semantic search engine for news articles using sentence embeddings, vector sim
 - FastAPI API interface
 - Docker container support
 
-## Architecture
+```mermaid
+flowchart TD
+A[User Query] --> B[Query Embedding]
+B --> C[Cluster Detection]
+C --> D[Semantic Cache Lookup]
+D -->|Cache Hit| E[Return Result]
+D -->|Cache Miss| F[Vector Search FAISS]
+F --> G[Top Similar Documents]
+G --> H[API Response FastAPI]
+```
 
-User Query  
-   │  
-   ▼  
-Query Embedding (Sentence Transformer)  
-   │  
-   ▼  
-Cluster Detection (KMeans)  
-   │  
-   ▼  
-Semantic Cache Lookup  
-   │  
-   ├── Cache Hit → Return Result  
-   │  
-   ▼  
-Vector Search (FAISS Index)  
-   │  
-   ▼  
-Top Similar Documents  
-   │  
-   ▼  
-API Response (FastAPI)
-
-## Project Structure
 semantic-news-search
 │
 ├── app
 │ ├── api
 │ ├── core
 │ ├── cache
-│ └── data
+│ ├── data
+│ └── main.py
 │
 ├── scripts
 │ ├── build_embeddings.py
@@ -58,6 +45,7 @@ semantic-news-search
 │
 ├── Dockerfile
 ├── requirements.txt
+└── .gitignore
 
 
 # Install dependencies:
