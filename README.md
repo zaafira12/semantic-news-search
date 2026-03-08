@@ -138,7 +138,9 @@ Latency: **37 ms**
 - Docker
 
 ## Future Improvements
-
+- Hybrid semantic + keyword retrieval
+- Improved ranking models
+- Web search interface
 - UI dashboard for search
 - Distributed vector search
 - Advanced ranking models
