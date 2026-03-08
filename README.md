@@ -1,11 +1,15 @@
+<p align="center">
+
+# Semantic News Search
+
+Semantic search engine for news articles using transformer embeddings, FAISS vector search, clustering and semantic caching.
+
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
 ![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
 
-# Semantic News Search
-
-A semantic search engine for news articles using sentence embeddings, vector similarity search, clustering, and caching.
+</p>
 
 ## Features
 
@@ -48,9 +52,16 @@ semantic-news-search
 └── .gitignore         # Ignored files
 ```
 
+## Quick Start
+
+Clone the repository
+
+```bash
+git clone https://github.com/zaafira12/semantic-news-search.git
+cd semantic-news-search
 # Install dependencies:
 pip install -r requirements.txt
-
+```
 # Run the API:
 uvicorn app.main:app --reload
 
@@ -98,8 +109,31 @@ POST /query
 
 <img width="1735" height="988" alt="Screenshot 2026-03-08 200641" src="https://github.com/user-attachments/assets/f774f0c5-5f13-4edb-bb8b-197549fa60bb" />
 
-## Technologies Used
+#  Metrics Section
+```markdown
+## Performance
 
+- Semantic search powered by **FAISS vector indexing**
+- **Semantic cache** reduces repeated query cost
+- **Cluster-aware retrieval** improves relevance
+- Query latency tracking included
+
+Example:
+
+Cache hit: **true**  
+Latency: **37 ms**
+```
+## System Components
+
+| Component | Description |
+|--------|-------------|
+| Embeddings | Sentence Transformers generate semantic vectors |
+| Vector Store | FAISS performs fast similarity search |
+| Clustering | Groups documents for faster retrieval |
+| Cache | Semantic cache avoids recomputation |
+| API | FastAPI exposes query endpoint |
+
+# Technologies Used
 - Python
 - FastAPI
 - Sentence Transformers
