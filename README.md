@@ -23,14 +23,18 @@ A semantic search engine for news articles using sentence embeddings, vector sim
 User Query
    │
    ▼
+   
 Query Embedding
 (Sentence Transformer)
+
    │
    ▼
+   
 Cluster Detection
 (KMeans)
    │
    ▼
+   
 Semantic Cache Lookup
    │
    ├── Cache Hit → Return Result
