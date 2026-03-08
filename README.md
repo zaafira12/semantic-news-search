@@ -1,4 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3.10-blue)
+<img width="1274" height="89" alt="image" src="https://github.com/user-attachments/assets/9d48e82f-7073-4d2d-918d-0354fd1a3f2b" />![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
 ![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
@@ -18,6 +18,8 @@ A semantic search engine for news articles using sentence embeddings, vector sim
 - FastAPI API interface
 - Docker container support
 
+## Architecture
+
 ```mermaid
 flowchart TD
 A[User Query] --> B[Query Embedding]
@@ -29,24 +31,13 @@ F --> G[Top Similar Documents]
 G --> H[API Response FastAPI]
 ```
 
-semantic-news-search
-│
-├── app
-│ ├── api
-│ ├── core
-│ ├── cache
-│ ├── data
-│ └── main.py
-│
-├── scripts
-│ ├── build_embeddings.py
-│ ├── run_clustering.py
-│ └── analyze_clusters.py
-│
-├── Dockerfile
-├── requirements.txt
-└── .gitignore
+## Project Structure
 
+├── app                # Main application code
+├── scripts            # Data processing scripts
+├── Dockerfile         # Container setup
+├── requirements.txt   # Python dependencies
+└── .gitignore         # Ignored files
 
 # Install dependencies:
 pip install -r requirements.txt
