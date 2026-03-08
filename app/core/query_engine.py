@@ -5,6 +5,8 @@ import numpy as np
 from app.core.embeddings import embed_text
 from app.cache.semantic_cache import cache
 
+logging.basicConfig(level=logging.INFO)
+
 
 class QueryEngine:
 
@@ -18,7 +20,7 @@ class QueryEngine:
 
         query_embedding = embed_text(query)
 
-        cluster = int(np.argmax(query_embedding))
+        cluster = int(np.argmax(np.abs(query_embedding)))
 
         logging.info(f"Assigned cluster: {cluster}")
 
@@ -32,7 +34,7 @@ class QueryEngine:
                 "query": query,
                 "cache_hit": True,
                 "latency_ms": latency * 1000,
-                "result": cache_result
+                "results": cache_result
             }
 
         results = self.vector_store.search(query_embedding)

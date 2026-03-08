@@ -16,17 +16,20 @@ class VectorStore:
 
     def search(self, query_vector, k=5):
 
-      query_vector = np.array([query_vector])
+        query_vector = np.array([query_vector])
 
-      distances, indices = self.index.search(query_vector, k)
+        distances, indices = self.index.search(query_vector, k)
 
-      results = []
+        results = []
 
-      for i, idx in enumerate(indices[0]):
+        for i, idx in enumerate(indices[0]):
+
+            if idx == -1:
+                continue
 
             results.append({
                 "text": self.documents[idx],
                 "score": float(distances[0][i])
             })
 
-      return results
+        return results
