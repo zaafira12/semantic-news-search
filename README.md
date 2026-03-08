@@ -65,6 +65,12 @@ pip install -r requirements.txt
 # Run the API:
 uvicorn app.main:app --reload
 
+## Build Embeddings
+Before running the API, generate document embeddings:
+```bash
+python scripts/build_embeddings.py
+```
+
 # Open API docs:
 http://127.0.0.1:8000/docs
 
