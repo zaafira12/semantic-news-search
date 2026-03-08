@@ -1,4 +1,4 @@
-<img width="1274" height="89" alt="image" src="https://github.com/user-attachments/assets/9d48e82f-7073-4d2d-918d-0354fd1a3f2b" />![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
 ![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)
 ![License](https://img.shields.io/badge/License-MIT-purple)
