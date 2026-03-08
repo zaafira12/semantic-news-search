@@ -33,11 +33,20 @@ G --> H[API Response FastAPI]
 
 ## Project Structure
 
+```
+semantic-news-search
+│
 ├── app                # Main application code
+│
 ├── scripts            # Data processing scripts
+│   ├── build_embeddings.py
+│   ├── run_clustering.py
+│   └── analyze_clusters.py
+│
 ├── Dockerfile         # Container setup
 ├── requirements.txt   # Python dependencies
 └── .gitignore         # Ignored files
+```
 
 # Install dependencies:
 pip install -r requirements.txt
