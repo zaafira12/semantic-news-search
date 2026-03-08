@@ -84,16 +84,15 @@ POST /query
 # Response:
 ```json
 {
-"query": "space exploration",
-"cache_hit": false,
-"latency_ms": 37,
-"results": [
-{
-
-   "text": "...",
-   "score": 0.82
-}
-]
+  "query": "space exploration",
+  "cache_hit": false,
+  "latency_ms": 37,
+  "results": [
+   {
+     "text": "...",
+     "score": 0.82
+   }
+ ]
 }
 ```
 ## Example Query Result
