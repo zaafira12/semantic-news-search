@@ -75,10 +75,12 @@ The project exposes a FastAPI REST API.
 
 ## Example Query
 POST /query
-{
-"query": "space exploration"
-}
 
+```json
+{
+  "query": "space exploration"
+}
+```
 # Response:
 {
 "query": "space exploration",
@@ -109,11 +111,10 @@ POST /query
 
 <img width="1735" height="988" alt="Screenshot 2026-03-08 200641" src="https://github.com/user-attachments/assets/f774f0c5-5f13-4edb-bb8b-197549fa60bb" />
 
-#  Metrics Section
-```markdown
 ## Performance
+```markdown
+  - Semantic search powered by **FAISS vector indexing**
 
-- Semantic search powered by **FAISS vector indexing**
 - **Semantic cache** reduces repeated query cost
 - **Cluster-aware retrieval** improves relevance
 - Query latency tracking included
@@ -124,14 +125,15 @@ Cache hit: **true**
 Latency: **37 ms**
 ```
 ## System Components
-
+```markdown
 | Component | Description |
-|--------|-------------|
+|----------|-------------|
 | Embeddings | Sentence Transformers generate semantic vectors |
 | Vector Store | FAISS performs fast similarity search |
 | Clustering | Groups documents for faster retrieval |
 | Cache | Semantic cache avoids recomputation |
 | API | FastAPI exposes query endpoint |
+```
 
 # Technologies Used
 - Python
