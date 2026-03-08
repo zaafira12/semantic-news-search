@@ -71,17 +71,32 @@ POST /query
 # Response:
 {
 "query": "space exploration",
+
 "cache_hit": false,
+
 "latency_ms": 37,
+
 "results": [
+
 {
-"text": "...",
-"score": 0.82
+
+   "text": "...",
+   "score": 0.82
 }
+
 ]
+
 }
 
 ## Example Query Result
+
+<img width="1773" height="968" alt="Screenshot 2026-03-08 200603" src="https://github.com/user-attachments/assets/79329ac9-9b60-414f-885a-d7ba050a388a" />
+
+<img width="1736" height="974" alt="Screenshot 2026-03-08 200614" src="https://github.com/user-attachments/assets/078822a0-74ed-42b4-8f11-75f79e661cc3" />
+
+<img width="1737" height="811" alt="Screenshot 2026-03-08 200627" src="https://github.com/user-attachments/assets/503606ff-03c6-4fae-9973-b5c25626b1fa" />
+
+<img width="1735" height="988" alt="Screenshot 2026-03-08 200641" src="https://github.com/user-attachments/assets/f774f0c5-5f13-4edb-bb8b-197549fa60bb" />
 
 ## Technologies Used
 
