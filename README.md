@@ -82,6 +82,7 @@ POST /query
 }
 ```
 # Response:
+```json
 {
 "query": "space exploration",
 
@@ -100,7 +101,7 @@ POST /query
 ]
 
 }
-
+```
 ## Example Query Result
 
 <img width="1773" height="968" alt="Screenshot 2026-03-08 200603" src="https://github.com/user-attachments/assets/79329ac9-9b60-414f-885a-d7ba050a388a" />
