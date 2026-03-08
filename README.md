@@ -21,6 +21,7 @@ A semantic search engine for news articles using sentence embeddings, vector sim
 ## Architecture
 
 User Query
+
    │
    ▼
    
@@ -32,11 +33,14 @@ Query Embedding
    
 Cluster Detection
 (KMeans)
+
    │
    ▼
    
 Semantic Cache Lookup
+
    │
+   
    ├── Cache Hit → Return Result
    │
    ▼
